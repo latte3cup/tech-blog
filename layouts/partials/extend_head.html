@@ -1,0 +1,19 @@
+<!-- AdSense Head Script -->
+{{- partial "adsense-head.html" . }}
+
+<!-- Structured Data (JSON-LD) -->
+{{- partial "structured-data.html" . }}
+
+<!-- Google Analytics 4 -->
+{{- if site.Params.googleAnalyticsId }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.googleAnalyticsId }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.Params.googleAnalyticsId }}');
+</script>
+{{- end }}
+
+<!-- 추가 SEO 메타태그 -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
