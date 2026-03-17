@@ -80,6 +80,11 @@ buildExpired = false
     name = "Tags"
     url = "/tags/"
     weight = 30
+  [[menu.main]]
+    identifier = "privacy"
+    name = "Privacy"
+    url = "/privacy-policy/"
+    weight = 40
 
 # 코드 하이라이팅
 [markup]
